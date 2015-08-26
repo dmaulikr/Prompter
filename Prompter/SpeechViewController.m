@@ -7,6 +7,7 @@
 //
 
 #import <MessageUI/MessageUI.h>
+#import "PromptViewController.h"
 #import "SpeechViewController.h"
 
 @interface SpeechViewController () <UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
@@ -47,6 +48,10 @@
 # pragma - Navigation Controller Methods
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"PromptSpeechSegue"]) {
+        PromptViewController *PVC = (PromptViewController *)segue.destinationViewController;
+        PVC.speechText = self.noteTextView.text;
+    }
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                    style:UIBarButtonItemStylePlain
                                                                   target:nil

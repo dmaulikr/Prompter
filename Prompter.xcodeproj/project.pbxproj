@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D183B1A1B8E69E4003F8076 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D183B191B8E69E4003F8076 /* MessageUI.framework */; };
+		1D183B1F1B8E70B6003F8076 /* PromptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D183B1E1B8E70B6003F8076 /* PromptViewController.m */; };
 		1DD292041B8D876F006319F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292031B8D876F006319F8 /* main.m */; };
 		1DD292071B8D876F006319F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292061B8D876F006319F8 /* AppDelegate.m */; };
 		1DD2920A1B8D876F006319F8 /* Prompter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292081B8D876F006319F8 /* Prompter.xcdatamodeld */; };
@@ -33,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		1D183B191B8E69E4003F8076 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1D183B1D1B8E70B6003F8076 /* PromptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromptViewController.h; sourceTree = "<group>"; };
+		1D183B1E1B8E70B6003F8076 /* PromptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromptViewController.m; sourceTree = "<group>"; };
 		1DD291FE1B8D876F006319F8 /* Prompter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prompter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD292021B8D876F006319F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DD292031B8D876F006319F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D183B1C1B8E70A3003F8076 /* Prompt View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D183B1D1B8E70B6003F8076 /* PromptViewController.h */,
+				1D183B1E1B8E70B6003F8076 /* PromptViewController.m */,
+			);
+			name = "Prompt View Controller";
+			sourceTree = "<group>";
+		};
 		1DD291F51B8D876F006319F8 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +112,7 @@
 				1DD2922A1B8D87F1006319F8 /* App Delegate */,
 				1DD2922B1B8D8801006319F8 /* Speeches Table View Controller */,
 				1DD292331B8D8F74006319F8 /* Speech View Controller */,
+				1D183B1C1B8E70A3003F8076 /* Prompt View Controller */,
 				1DD2920E1B8D876F006319F8 /* Main.storyboard */,
 				1DD292111B8D876F006319F8 /* Images.xcassets */,
 				1DD292131B8D876F006319F8 /* LaunchScreen.xib */,
@@ -275,6 +288,7 @@
 			files = (
 				1DD292321B8D8E9C006319F8 /* Note.m in Sources */,
 				1DD2920A1B8D876F006319F8 /* Prompter.xcdatamodeld in Sources */,
+				1D183B1F1B8E70B6003F8076 /* PromptViewController.m in Sources */,
 				1DD292361B8D8F88006319F8 /* SpeechViewController.m in Sources */,
 				1DD292071B8D876F006319F8 /* AppDelegate.m in Sources */,
 				1DD292041B8D876F006319F8 /* main.m in Sources */,

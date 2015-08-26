@@ -20,7 +20,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Speech Preview" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngP-xT-7oz">
-                                            <rect key="frame" x="15" y="14" width="185" height="52"/>
+                                            <rect key="frame" x="15" y="14" width="175" height="52"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" red="0.16078431372549018" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -90,6 +90,9 @@
                                 <state key="normal" title="P">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="N5u-LS-vjJ" kind="push" identifier="PromptSpeechSegue" id="pSh-Gx-avN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUk-hk-BEf">
                                 <rect key="frame" x="266" y="519" width="44" height="44"/>
@@ -157,6 +160,107 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="maS-kG-Hqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992" y="283"/>
+        </scene>
+        <!--Prompt Speech-->
+        <scene sceneID="rND-7r-90M">
+            <objects>
+                <viewController id="N5u-LS-vjJ" customClass="PromptViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Td-3x-wO8"/>
+                        <viewControllerLayoutGuide type="bottom" id="mFE-nw-FRa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ADN-n8-DqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iv-9C-j4Q">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.16078431372549018" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6l-sZ-krZ">
+                                <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ged-MT-2xt">
+                                <rect key="frame" x="255" y="508" width="65" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="37"/>
+                                <state key="normal" title="Aa">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sizeButtonPressed:" destination="N5u-LS-vjJ" eventType="touchUpInside" id="nrI-e5-0jb"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.035000000000000003" minValue="0.02" maxValue="0.050000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="xnV-uk-rAM">
+                                <rect key="frame" x="85" y="523" width="150" height="31"/>
+                                <connections>
+                                    <action selector="speedSliderMoved:" destination="N5u-LS-vjJ" eventType="valueChanged" id="3mO-zi-SjK"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEP-rM-YzO">
+                                <rect key="frame" x="0.0" y="508" width="65" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <state key="normal" title="▶︎">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="promptButtonPressed:" destination="N5u-LS-vjJ" eventType="touchUpInside" id="fbL-xO-2hi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mFE-nw-FRa" firstAttribute="top" secondItem="Ged-MT-2xt" secondAttribute="bottom" id="0w5-xH-rAQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IEP-rM-YzO" secondAttribute="trailing" constant="239" id="17Z-FG-hmx"/>
+                            <constraint firstItem="xnV-uk-rAM" firstAttribute="top" secondItem="0iv-9C-j4Q" secondAttribute="bottom" constant="-45" id="3kB-M3-h3v"/>
+                            <constraint firstItem="q6l-sZ-krZ" firstAttribute="top" secondItem="IEP-rM-YzO" secondAttribute="bottom" constant="-60" id="6tl-56-Krp"/>
+                            <constraint firstItem="IEP-rM-YzO" firstAttribute="leading" secondItem="ADN-n8-DqZ" secondAttribute="leadingMargin" constant="-16" id="82R-Ut-ZND"/>
+                            <constraint firstItem="Ged-MT-2xt" firstAttribute="top" secondItem="0iv-9C-j4Q" secondAttribute="bottom" constant="-60" id="A55-i0-S1V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q6l-sZ-krZ" secondAttribute="trailing" constant="-16" id="Gro-VY-7Wx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xnV-uk-rAM" secondAttribute="trailing" constant="71" id="I0O-4W-yLJ"/>
+                            <constraint firstItem="IEP-rM-YzO" firstAttribute="top" secondItem="0Td-3x-wO8" secondAttribute="bottom" constant="444" id="I6Z-fv-XGZ"/>
+                            <constraint firstItem="Ged-MT-2xt" firstAttribute="top" secondItem="0Td-3x-wO8" secondAttribute="bottom" constant="444" id="Kcg-0f-AKa"/>
+                            <constraint firstItem="Ged-MT-2xt" firstAttribute="leading" secondItem="ADN-n8-DqZ" secondAttribute="leadingMargin" constant="239" id="LPX-C5-ews"/>
+                            <constraint firstItem="xnV-uk-rAM" firstAttribute="top" secondItem="0Td-3x-wO8" secondAttribute="bottom" constant="459" id="ON1-xV-5ik"/>
+                            <constraint firstItem="0iv-9C-j4Q" firstAttribute="top" secondItem="0Td-3x-wO8" secondAttribute="bottom" id="TDh-gk-KPn"/>
+                            <constraint firstItem="mFE-nw-FRa" firstAttribute="top" secondItem="q6l-sZ-krZ" secondAttribute="bottom" id="aKN-BE-gw3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ged-MT-2xt" secondAttribute="trailing" constant="-16" id="cGE-gY-E9k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0iv-9C-j4Q" secondAttribute="trailing" constant="-16" id="dak-8N-J9g"/>
+                            <constraint firstItem="xnV-uk-rAM" firstAttribute="leading" secondItem="IEP-rM-YzO" secondAttribute="trailing" constant="22" id="ddv-G8-yPl"/>
+                            <constraint firstItem="q6l-sZ-krZ" firstAttribute="top" secondItem="xnV-uk-rAM" secondAttribute="bottom" constant="-45" id="gCb-sb-wEp"/>
+                            <constraint firstItem="mFE-nw-FRa" firstAttribute="top" secondItem="xnV-uk-rAM" secondAttribute="bottom" constant="15" id="gHk-5y-z0F"/>
+                            <constraint firstItem="xnV-uk-rAM" firstAttribute="leading" secondItem="ADN-n8-DqZ" secondAttribute="leadingMargin" constant="71" id="glI-JT-2QH"/>
+                            <constraint firstItem="q6l-sZ-krZ" firstAttribute="top" secondItem="0iv-9C-j4Q" secondAttribute="bottom" constant="-60" id="iRC-fA-fQr"/>
+                            <constraint firstItem="0iv-9C-j4Q" firstAttribute="leading" secondItem="ADN-n8-DqZ" secondAttribute="leadingMargin" constant="-16" id="ign-bR-XxM"/>
+                            <constraint firstItem="q6l-sZ-krZ" firstAttribute="leading" secondItem="ADN-n8-DqZ" secondAttribute="leadingMargin" constant="-16" id="qMG-Sz-HPS"/>
+                            <constraint firstItem="q6l-sZ-krZ" firstAttribute="top" secondItem="0Td-3x-wO8" secondAttribute="bottom" constant="444" id="rCP-cl-cVt"/>
+                            <constraint firstItem="mFE-nw-FRa" firstAttribute="top" secondItem="0iv-9C-j4Q" secondAttribute="bottom" id="rpp-Ts-XhC"/>
+                            <constraint firstItem="IEP-rM-YzO" firstAttribute="top" secondItem="0iv-9C-j4Q" secondAttribute="bottom" constant="-60" id="s7f-ab-3KN"/>
+                            <constraint firstItem="Ged-MT-2xt" firstAttribute="top" secondItem="q6l-sZ-krZ" secondAttribute="bottom" constant="-60" id="uBp-Qj-mwc"/>
+                            <constraint firstItem="mFE-nw-FRa" firstAttribute="top" secondItem="IEP-rM-YzO" secondAttribute="bottom" id="zJT-8x-iDv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Prompt Speech" id="HlE-Qd-XQc"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="q6l-sZ-krZ" id="xQH-zu-HkT"/>
+                        <outlet property="editButton" destination="Ged-MT-2xt" id="qm0-cn-ng1"/>
+                        <outlet property="promptButton" destination="IEP-rM-YzO" id="2hh-A7-mOv"/>
+                        <outlet property="speechTextView" destination="0iv-9C-j4Q" id="Z8k-52-w0S"/>
+                        <outlet property="speedSlider" destination="xnV-uk-rAM" id="FUK-Wi-5f0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfC-hI-ZaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412" y="283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fp5-0O-pMe">
