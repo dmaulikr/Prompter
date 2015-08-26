@@ -10,11 +10,13 @@
 		1DD292041B8D876F006319F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292031B8D876F006319F8 /* main.m */; };
 		1DD292071B8D876F006319F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292061B8D876F006319F8 /* AppDelegate.m */; };
 		1DD2920A1B8D876F006319F8 /* Prompter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292081B8D876F006319F8 /* Prompter.xcdatamodeld */; };
-		1DD2920D1B8D876F006319F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD2920C1B8D876F006319F8 /* ViewController.m */; };
 		1DD292101B8D876F006319F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD2920E1B8D876F006319F8 /* Main.storyboard */; };
 		1DD292121B8D876F006319F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD292111B8D876F006319F8 /* Images.xcassets */; };
 		1DD292151B8D876F006319F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD292131B8D876F006319F8 /* LaunchScreen.xib */; };
 		1DD292211B8D876F006319F8 /* PrompterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292201B8D876F006319F8 /* PrompterTests.m */; };
+		1DD2922E1B8D8823006319F8 /* SpeechesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD2922D1B8D8823006319F8 /* SpeechesTableViewController.m */; };
+		1DD292321B8D8E9C006319F8 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292311B8D8E9C006319F8 /* Note.m */; };
+		1DD292361B8D8F88006319F8 /* SpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292351B8D8F88006319F8 /* SpeechViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +36,18 @@
 		1DD292051B8D876F006319F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1DD292061B8D876F006319F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1DD292091B8D876F006319F8 /* Prompter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prompter.xcdatamodel; sourceTree = "<group>"; };
-		1DD2920B1B8D876F006319F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1DD2920C1B8D876F006319F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1DD2920F1B8D876F006319F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DD292111B8D876F006319F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1DD292141B8D876F006319F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1DD2921A1B8D876F006319F8 /* PrompterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrompterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD2921F1B8D876F006319F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DD292201B8D876F006319F8 /* PrompterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrompterTests.m; sourceTree = "<group>"; };
+		1DD2922C1B8D8823006319F8 /* SpeechesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechesTableViewController.h; sourceTree = "<group>"; };
+		1DD2922D1B8D8823006319F8 /* SpeechesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechesTableViewController.m; sourceTree = "<group>"; };
+		1DD292301B8D8E9C006319F8 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		1DD292311B8D8E9C006319F8 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		1DD292341B8D8F88006319F8 /* SpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechViewController.h; sourceTree = "<group>"; };
+		1DD292351B8D8F88006319F8 /* SpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +89,10 @@
 		1DD292001B8D876F006319F8 /* Prompter */ = {
 			isa = PBXGroup;
 			children = (
-				1DD292051B8D876F006319F8 /* AppDelegate.h */,
-				1DD292061B8D876F006319F8 /* AppDelegate.m */,
-				1DD2920B1B8D876F006319F8 /* ViewController.h */,
-				1DD2920C1B8D876F006319F8 /* ViewController.m */,
+				1DD2922F1B8D8E7D006319F8 /* Managed Objects */,
+				1DD2922A1B8D87F1006319F8 /* App Delegate */,
+				1DD2922B1B8D8801006319F8 /* Speeches Table View Controller */,
+				1DD292331B8D8F74006319F8 /* Speech View Controller */,
 				1DD2920E1B8D876F006319F8 /* Main.storyboard */,
 				1DD292111B8D876F006319F8 /* Images.xcassets */,
 				1DD292131B8D876F006319F8 /* LaunchScreen.xib */,
@@ -120,6 +126,42 @@
 				1DD2921F1B8D876F006319F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DD2922A1B8D87F1006319F8 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1DD292051B8D876F006319F8 /* AppDelegate.h */,
+				1DD292061B8D876F006319F8 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		1DD2922B1B8D8801006319F8 /* Speeches Table View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DD2922C1B8D8823006319F8 /* SpeechesTableViewController.h */,
+				1DD2922D1B8D8823006319F8 /* SpeechesTableViewController.m */,
+			);
+			name = "Speeches Table View Controller";
+			sourceTree = "<group>";
+		};
+		1DD2922F1B8D8E7D006319F8 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1DD292301B8D8E9C006319F8 /* Note.h */,
+				1DD292311B8D8E9C006319F8 /* Note.m */,
+			);
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		1DD292331B8D8F74006319F8 /* Speech View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DD292341B8D8F88006319F8 /* SpeechViewController.h */,
+				1DD292351B8D8F88006319F8 /* SpeechViewController.m */,
+			);
+			name = "Speech View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD292321B8D8E9C006319F8 /* Note.m in Sources */,
 				1DD2920A1B8D876F006319F8 /* Prompter.xcdatamodeld in Sources */,
+				1DD292361B8D8F88006319F8 /* SpeechViewController.m in Sources */,
 				1DD292071B8D876F006319F8 /* AppDelegate.m in Sources */,
-				1DD2920D1B8D876F006319F8 /* ViewController.m in Sources */,
 				1DD292041B8D876F006319F8 /* main.m in Sources */,
+				1DD2922E1B8D8823006319F8 /* SpeechesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
