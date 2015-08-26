@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D183B1A1B8E69E4003F8076 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D183B191B8E69E4003F8076 /* MessageUI.framework */; };
 		1DD292041B8D876F006319F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292031B8D876F006319F8 /* main.m */; };
 		1DD292071B8D876F006319F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292061B8D876F006319F8 /* AppDelegate.m */; };
 		1DD2920A1B8D876F006319F8 /* Prompter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292081B8D876F006319F8 /* Prompter.xcdatamodeld */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D183B191B8E69E4003F8076 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		1DD291FE1B8D876F006319F8 /* Prompter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prompter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD292021B8D876F006319F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DD292031B8D876F006319F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D183B1A1B8E69E4003F8076 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 				1DD292001B8D876F006319F8 /* Prompter */,
 				1DD2921D1B8D876F006319F8 /* PrompterTests */,
 				1DD291FF1B8D876F006319F8 /* Products */,
+				1D183B191B8E69E4003F8076 /* MessageUI.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -470,6 +474,7 @@
 				1DD292261B8D876F006319F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DD292271B8D876F006319F8 /* Build configuration list for PBXNativeTarget "PrompterTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +483,7 @@
 				1DD292291B8D876F006319F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

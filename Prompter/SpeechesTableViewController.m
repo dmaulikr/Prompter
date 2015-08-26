@@ -43,7 +43,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     SpeechTableViewCell *speechCell = (SpeechTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:@"SpeechCell"
                                                                                                   forIndexPath:indexPath];
-    [self configureSpeechCell:speechCell AtIndexPath:indexPath];
+    [self configureSpeechCell:speechCell
+                  AtIndexPath:indexPath];
     return speechCell;
 }
 
@@ -57,7 +58,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50;
+    return 75;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -74,9 +75,9 @@
 # pragma - Navigation Controller Methods
 
 - (void)prepareNavigationBar {
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:(73.0/255.0)
-                                                                           green:(220.0/255.0)
-                                                                            blue:(189.0/255.0)
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:(85.0/255.0)
+                                                                           green:(172.0/255.0)
+                                                                            blue:(238.0/255.0)
                                                                            alpha:1.0];
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.titleTextAttributes = [[NSDictionary alloc] initWithObjectsAndKeys:
@@ -123,8 +124,8 @@
     NSError *error = nil;
     [self.fetchedResultsController performFetch:&error];
     if (error) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                            message:@"Uh oh! I cannot fetch your speeches!"
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Uh oh!"
+                                                            message:@"I was unable to fetch your speeches!"
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
@@ -154,12 +155,15 @@
         }
         case NSFetchedResultsChangeUpdate: {
             SpeechTableViewCell *speechCell = (SpeechTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
-            [self configureSpeechCell:speechCell AtIndexPath:indexPath];
+            [self configureSpeechCell:speechCell
+                          AtIndexPath:indexPath];
             break;
         }
         case NSFetchedResultsChangeMove: {
-            [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-            [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+                                  withRowAnimation:UITableViewRowAnimationFade];
+            [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
+                                  withRowAnimation:UITableViewRowAnimationFade];
             break;
         }
     }
