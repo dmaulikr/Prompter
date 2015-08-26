@@ -99,7 +99,7 @@
     } else if ([segue.identifier isEqualToString:@"EditSpeechSegue"]) {
         SVC.navigationItem.title = @"Edit Speech";
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        SVC.noteSelected = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        SVC.speechSelected = [self.fetchedResultsController objectAtIndexPath:indexPath];
     }
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                    style:UIBarButtonItemStylePlain

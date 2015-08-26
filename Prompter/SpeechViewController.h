@@ -14,6 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UITextView *noteTextView;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (strong, nonatomic) Note *noteSelected;
+@property (strong, nonatomic) Note *speechSelected;
 
 @end

@@ -29,13 +29,13 @@
     if (self.isMovingFromParentViewController) {
         if ([self.noteTextView.text isEqualToString:@""]) {
             if ([self.navigationItem.title isEqualToString:@"Edit Speech"]) {
-                [self.managedObjectContext deleteObject:self.noteSelected];
+                [self.managedObjectContext deleteObject:self.speechSelected];
             }
         } else {
             if ([self.navigationItem.title isEqualToString:@"New Speech"]) {
                 [self saveSpeech];
             } else if ([self.navigationItem.title isEqualToString:@"Edit Speech"]) {
-                NSString *text = self.noteSelected.text;
+                NSString *text = self.speechSelected.text;
                 if (![text isEqualToString:self.noteTextView.text]) {
                     [self updateSpeech];
                 }
@@ -150,9 +150,9 @@
 }
 
 - (void)updateSpeech {
-    self.noteSelected.dateUpdated = self.dateLabel.text;
-    self.noteSelected.text = self.noteTextView.text;
-    self.noteSelected.sortDescriptor = [self sortDescriptorForNote];
+    self.speechSelected.dateUpdated = self.dateLabel.text;
+    self.speechSelected.text = self.noteTextView.text;
+    self.speechSelected.sortDescriptor = [self sortDescriptorForNote];
 }
 
 - (void)saveManagedObjectContext {
@@ -202,8 +202,8 @@
         [self updateDateLabel];
         self.noteTextView.text = @"";
     } else if ([self.navigationItem.title isEqualToString:@"Edit Speech"]) {
-        self.dateLabel.text = self.noteSelected.dateUpdated;
-        self.noteTextView.text = self.noteSelected.text;
+        self.dateLabel.text = self.speechSelected.dateUpdated;
+        self.noteTextView.text = self.speechSelected.text;
     }
 }
 

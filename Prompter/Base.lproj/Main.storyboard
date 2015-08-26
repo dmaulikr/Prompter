@@ -58,7 +58,7 @@
             </objects>
             <point key="canvasLocation" x="574" y="283"/>
         </scene>
-        <!--Speech-->
+        <!--Edit Speech-->
         <scene sceneID="i6c-6D-mDT">
             <objects>
                 <viewController id="RVn-X9-7Lq" customClass="SpeechViewController" sceneMemberID="viewController">
@@ -144,7 +144,7 @@
                             <constraint firstItem="pUk-hk-BEf" firstAttribute="top" secondItem="my4-wR-Cab" secondAttribute="bottom" constant="455" id="xMa-Vb-D4U"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Speech" id="qNJ-si-Dvh">
+                    <navigationItem key="navigationItem" title="Edit Speech" id="qNJ-si-Dvh">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Hide" style="done" id="s93-SX-Jh2">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
