@@ -17,6 +17,7 @@
 		1DD2922E1B8D8823006319F8 /* SpeechesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD2922D1B8D8823006319F8 /* SpeechesTableViewController.m */; };
 		1DD292321B8D8E9C006319F8 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292311B8D8E9C006319F8 /* Note.m */; };
 		1DD292361B8D8F88006319F8 /* SpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292351B8D8F88006319F8 /* SpeechViewController.m */; };
+		1DD292391B8D984D006319F8 /* SpeechTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292381B8D984D006319F8 /* SpeechTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		1DD292311B8D8E9C006319F8 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		1DD292341B8D8F88006319F8 /* SpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechViewController.h; sourceTree = "<group>"; };
 		1DD292351B8D8F88006319F8 /* SpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechViewController.m; sourceTree = "<group>"; };
+		1DD292371B8D984D006319F8 /* SpeechTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechTableViewCell.h; sourceTree = "<group>"; };
+		1DD292381B8D984D006319F8 /* SpeechTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 			children = (
 				1DD2922C1B8D8823006319F8 /* SpeechesTableViewController.h */,
 				1DD2922D1B8D8823006319F8 /* SpeechesTableViewController.m */,
+				1DD292371B8D984D006319F8 /* SpeechTableViewCell.h */,
+				1DD292381B8D984D006319F8 /* SpeechTableViewCell.m */,
 			);
 			name = "Speeches Table View Controller";
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				1DD292071B8D876F006319F8 /* AppDelegate.m in Sources */,
 				1DD292041B8D876F006319F8 /* main.m in Sources */,
 				1DD2922E1B8D8823006319F8 /* SpeechesTableViewController.m in Sources */,
+				1DD292391B8D984D006319F8 /* SpeechTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

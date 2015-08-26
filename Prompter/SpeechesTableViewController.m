@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Note.h"
 #import "SpeechesTableViewController.h"
+#import "SpeechTableViewCell.h"
 #import "SpeechViewController.h"
 
 @interface SpeechesTableViewController () <NSFetchedResultsControllerDelegate>
@@ -40,17 +41,18 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *speechCell = [self.tableView dequeueReusableCellWithIdentifier:@"SpeechCell" forIndexPath:indexPath];
+    SpeechTableViewCell *speechCell = (SpeechTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:@"SpeechCell"
+                                                                                                  forIndexPath:indexPath];
     [self configureSpeechCell:speechCell AtIndexPath:indexPath];
     return speechCell;
 }
 
-- (UITableViewCell *)configureSpeechCell:(UITableViewCell *)speechCell AtIndexPath:(NSIndexPath *)indexPath {
+- (SpeechTableViewCell *)configureSpeechCell:(SpeechTableViewCell *)speechCell AtIndexPath:(NSIndexPath *)indexPath {
     Note *note = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    speechCell.textLabel.text = note.text;
+    speechCell.notePreviewLabel.text = note.text;
     NSString *dateString = note.sortDescriptor;
     NSArray *dateComponents = [dateString componentsSeparatedByString:@" "];
-    speechCell.detailTextLabel.text = [dateComponents objectAtIndex:0];
+    speechCell.dateUpdatedLabel.text = [dateComponents objectAtIndex:0];
     return speechCell;
 }
 
@@ -147,7 +149,7 @@
             break;
         }
         case NSFetchedResultsChangeUpdate: {
-            UITableViewCell *speechCell = [self.tableView cellForRowAtIndexPath:indexPath];
+            SpeechTableViewCell *speechCell = (SpeechTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
             [self configureSpeechCell:speechCell AtIndexPath:indexPath];
             break;
         }
