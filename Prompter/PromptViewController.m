@@ -125,7 +125,8 @@
     if (self.fontSize > 70) {
         self.fontSize = 30;
     }
-    self.speechTextView.font = [UIFont fontWithName:@"AvenirNext-Medium" size:self.fontSize];
+    self.speechTextView.font = [UIFont fontWithName:@"AvenirNext-Medium"
+                                               size:self.fontSize];
 }
 
 @end
