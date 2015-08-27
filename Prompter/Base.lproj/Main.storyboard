@@ -76,18 +76,11 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqZ-Nm-7KY">
-                                <rect key="frame" x="10" y="518" width="44" height="44"/>
-                                <state key="normal" title="T">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="trashButtonPressed:" destination="RVn-X9-7Lq" eventType="touchUpInside" id="ciK-1A-iQb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNy-rc-uaP">
-                                <rect key="frame" x="138" y="518" width="44" height="44"/>
-                                <state key="normal" title="P">
+                                <rect key="frame" x="130" y="516" width="61" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Prompt">
+                                    <color key="titleColor" red="0.0" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -95,8 +88,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUk-hk-BEf">
-                                <rect key="frame" x="266" y="519" width="44" height="44"/>
-                                <state key="normal" title="A">
+                                <rect key="frame" x="258" y="516" width="46" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleColor" red="0.0" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -114,34 +109,46 @@
                                     <outlet property="delegate" destination="RVn-X9-7Lq" id="cBM-ns-t0b"/>
                                 </connections>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqZ-Nm-7KY">
+                                <rect key="frame" x="16" y="516" width="44" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Trash">
+                                    <color key="titleColor" red="0.0" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trashButtonPressed:" destination="RVn-X9-7Lq" eventType="touchUpInside" id="ciK-1A-iQb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="98V-dQ-YOs" firstAttribute="leading" secondItem="lXI-mG-fZo" secondAttribute="leadingMargin" constant="-6" id="1uY-c6-ECn"/>
-                            <constraint firstItem="nqZ-Nm-7KY" firstAttribute="top" secondItem="98V-dQ-YOs" secondAttribute="bottom" constant="11" id="7td-ff-fX8"/>
-                            <constraint firstItem="pUk-hk-BEf" firstAttribute="leading" secondItem="lXI-mG-fZo" secondAttribute="leadingMargin" constant="250" id="9Xc-Iv-nVy"/>
-                            <constraint firstItem="ZNy-rc-uaP" firstAttribute="top" secondItem="98V-dQ-YOs" secondAttribute="bottom" constant="11" id="9cd-C8-00c"/>
-                            <constraint firstItem="ZNy-rc-uaP" firstAttribute="leading" secondItem="lXI-mG-fZo" secondAttribute="leadingMargin" constant="122" id="AWd-F3-5P2"/>
+                            <constraint firstItem="pUk-hk-BEf" firstAttribute="top" secondItem="my4-wR-Cab" secondAttribute="bottom" constant="452" id="7HT-Zq-T6s"/>
+                            <constraint firstItem="ZNy-rc-uaP" firstAttribute="leading" secondItem="nqZ-Nm-7KY" secondAttribute="trailing" constant="70" id="8Kj-gU-ACl"/>
                             <constraint firstItem="5DC-dW-q73" firstAttribute="top" secondItem="98V-dQ-YOs" secondAttribute="bottom" constant="61" id="BaY-AL-FVD"/>
-                            <constraint firstItem="nqZ-Nm-7KY" firstAttribute="leading" secondItem="lXI-mG-fZo" secondAttribute="leadingMargin" constant="-6" id="JKr-X1-VDb"/>
+                            <constraint firstItem="pUk-hk-BEf" firstAttribute="leading" secondItem="ZNy-rc-uaP" secondAttribute="trailing" constant="67" id="EEh-jv-eaW"/>
+                            <constraint firstItem="pUk-hk-BEf" firstAttribute="leading" secondItem="lXI-mG-fZo" secondAttribute="leadingMargin" constant="242" id="I5I-OH-8s9"/>
                             <constraint firstItem="VXA-iZ-qno" firstAttribute="trailing" secondItem="lXI-mG-fZo" secondAttribute="trailingMargin" id="KqS-6P-NI6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZNy-rc-uaP" secondAttribute="trailing" constant="113" id="MRp-gk-uH5"/>
                             <constraint firstItem="VXA-iZ-qno" firstAttribute="top" secondItem="my4-wR-Cab" secondAttribute="bottom" constant="11" id="OhG-21-EOC"/>
-                            <constraint firstItem="5DC-dW-q73" firstAttribute="top" secondItem="ZNy-rc-uaP" secondAttribute="bottom" constant="6" id="QGz-Ix-xRc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nqZ-Nm-7KY" secondAttribute="trailing" constant="250" id="RT7-az-aYS"/>
+                            <constraint firstItem="5DC-dW-q73" firstAttribute="top" secondItem="pUk-hk-BEf" secondAttribute="bottom" constant="8" id="Q5Q-cc-1nv"/>
+                            <constraint firstItem="pUk-hk-BEf" firstAttribute="top" secondItem="98V-dQ-YOs" secondAttribute="bottom" constant="9" id="QGJ-5o-l9X"/>
+                            <constraint firstItem="ZNy-rc-uaP" firstAttribute="leading" secondItem="lXI-mG-fZo" secondAttribute="leadingMargin" constant="114" id="SJM-i5-Qgv"/>
                             <constraint firstItem="5DC-dW-q73" firstAttribute="top" secondItem="VXA-iZ-qno" secondAttribute="bottom" constant="469" id="SQt-oZ-XKO"/>
+                            <constraint firstItem="nqZ-Nm-7KY" firstAttribute="top" secondItem="98V-dQ-YOs" secondAttribute="bottom" constant="9" id="UUU-lQ-0D8"/>
                             <constraint firstItem="VXA-iZ-qno" firstAttribute="leading" secondItem="lXI-mG-fZo" secondAttribute="leadingMargin" id="YMd-sz-Ik9"/>
                             <constraint firstItem="98V-dQ-YOs" firstAttribute="top" secondItem="my4-wR-Cab" secondAttribute="bottom" constant="43" id="Yix-kF-F8k"/>
-                            <constraint firstItem="pUk-hk-BEf" firstAttribute="leading" secondItem="ZNy-rc-uaP" secondAttribute="trailing" constant="84" id="ae5-OC-s8Y"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZNy-rc-uaP" secondAttribute="trailing" constant="122" id="fDK-iS-7lc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nqZ-Nm-7KY" secondAttribute="trailing" constant="244" id="ZkD-nc-tBK"/>
+                            <constraint firstItem="5DC-dW-q73" firstAttribute="top" secondItem="ZNy-rc-uaP" secondAttribute="bottom" constant="8" id="bzF-3s-7qg"/>
+                            <constraint firstItem="nqZ-Nm-7KY" firstAttribute="leading" secondItem="lXI-mG-fZo" secondAttribute="leadingMargin" id="coI-ZH-kNV"/>
+                            <constraint firstItem="ZNy-rc-uaP" firstAttribute="top" secondItem="98V-dQ-YOs" secondAttribute="bottom" constant="9" id="fY6-2T-Mke"/>
                             <constraint firstItem="98V-dQ-YOs" firstAttribute="top" secondItem="VXA-iZ-qno" secondAttribute="bottom" constant="8" id="gj4-Rl-9f9"/>
-                            <constraint firstItem="ZNy-rc-uaP" firstAttribute="leading" secondItem="nqZ-Nm-7KY" secondAttribute="trailing" constant="84" id="jK3-xs-5ez"/>
-                            <constraint firstItem="ZNy-rc-uaP" firstAttribute="top" secondItem="my4-wR-Cab" secondAttribute="bottom" constant="454" id="kZr-Mc-9AE"/>
-                            <constraint firstItem="5DC-dW-q73" firstAttribute="top" secondItem="pUk-hk-BEf" secondAttribute="bottom" constant="5" id="lWy-zu-Px8"/>
-                            <constraint firstItem="nqZ-Nm-7KY" firstAttribute="top" secondItem="my4-wR-Cab" secondAttribute="bottom" constant="454" id="mGA-o4-fZ1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pUk-hk-BEf" secondAttribute="trailing" constant="-6" id="nHV-o8-9He"/>
+                            <constraint firstItem="5DC-dW-q73" firstAttribute="top" secondItem="nqZ-Nm-7KY" secondAttribute="bottom" constant="8" id="lzH-KM-qYd"/>
+                            <constraint firstItem="ZNy-rc-uaP" firstAttribute="top" secondItem="my4-wR-Cab" secondAttribute="bottom" constant="452" id="o4D-Ii-DIS"/>
+                            <constraint firstItem="nqZ-Nm-7KY" firstAttribute="top" secondItem="my4-wR-Cab" secondAttribute="bottom" constant="452" id="pWW-Ie-BKJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="98V-dQ-YOs" secondAttribute="trailing" constant="-6" id="uX6-mN-uAq"/>
-                            <constraint firstItem="5DC-dW-q73" firstAttribute="top" secondItem="nqZ-Nm-7KY" secondAttribute="bottom" constant="6" id="w8Q-zW-FB1"/>
-                            <constraint firstItem="pUk-hk-BEf" firstAttribute="top" secondItem="my4-wR-Cab" secondAttribute="bottom" constant="455" id="xMa-Vb-D4U"/>
+                            <constraint firstItem="pUk-hk-BEf" firstAttribute="trailing" secondItem="lXI-mG-fZo" secondAttribute="trailingMargin" id="vdv-ne-i5y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Speech" id="qNJ-si-Dvh">
