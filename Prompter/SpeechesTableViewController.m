@@ -75,9 +75,9 @@
 # pragma - Navigation Controller Methods
 
 - (void)prepareNavigationBar {
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:(85.0/255.0)
-                                                                           green:(172.0/255.0)
-                                                                            blue:(238.0/255.0)
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:(0.0/255.0)
+                                                                           green:(145.0/255.0)
+                                                                            blue:(255.0/255.0)
                                                                            alpha:1.0];
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.titleTextAttributes = [[NSDictionary alloc] initWithObjectsAndKeys:
