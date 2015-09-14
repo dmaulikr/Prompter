@@ -19,19 +19,29 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pEO-gR-baR" id="IAE-rx-Jec">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Speech Preview" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngP-xT-7oz">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speech Preview" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngP-xT-7oz">
                                             <rect key="frame" x="15" y="14" width="175" height="52"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" red="0.16078431372549018" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12/12/12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iby-PS-8j9">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/12/12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iby-PS-8j9">
                                             <rect key="frame" x="204" y="26" width="75" height="21"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ngP-xT-7oz" secondAttribute="trailing" constant="89" id="6Tg-sX-vhV"/>
+                                        <constraint firstItem="ngP-xT-7oz" firstAttribute="top" secondItem="IAE-rx-Jec" secondAttribute="topMargin" constant="6" id="CxJ-gV-snb"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="iby-PS-8j9" secondAttribute="bottom" constant="19" id="cp6-BQ-8nE"/>
+                                        <constraint firstItem="iby-PS-8j9" firstAttribute="top" secondItem="IAE-rx-Jec" secondAttribute="topMargin" constant="18" id="iIK-mU-TiY"/>
+                                        <constraint firstItem="ngP-xT-7oz" firstAttribute="bottom" secondItem="IAE-rx-Jec" secondAttribute="bottomMargin" id="kYS-4D-bWZ"/>
+                                        <constraint firstItem="iby-PS-8j9" firstAttribute="trailing" secondItem="IAE-rx-Jec" secondAttribute="trailingMargin" id="njt-MR-3wN"/>
+                                        <constraint firstItem="iby-PS-8j9" firstAttribute="leading" secondItem="ngP-xT-7oz" secondAttribute="trailing" constant="14" id="rcH-iK-caa"/>
+                                        <constraint firstItem="ngP-xT-7oz" firstAttribute="leading" secondItem="IAE-rx-Jec" secondAttribute="leadingMargin" constant="7" id="wbB-jh-mOf"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="dateUpdatedLabel" destination="iby-PS-8j9" id="9xm-Hp-Wil"/>
@@ -227,7 +237,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mFE-nw-FRa" firstAttribute="top" secondItem="Ged-MT-2xt" secondAttribute="bottom" id="0w5-xH-rAQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IEP-rM-YzO" secondAttribute="trailing" constant="239" id="17Z-FG-hmx"/>
                             <constraint firstItem="xnV-uk-rAM" firstAttribute="top" secondItem="0iv-9C-j4Q" secondAttribute="bottom" constant="-45" id="3kB-M3-h3v"/>
                             <constraint firstItem="q6l-sZ-krZ" firstAttribute="top" secondItem="IEP-rM-YzO" secondAttribute="bottom" constant="-60" id="6tl-56-Krp"/>
                             <constraint firstItem="IEP-rM-YzO" firstAttribute="leading" secondItem="ADN-n8-DqZ" secondAttribute="leadingMargin" constant="-16" id="82R-Ut-ZND"/>
@@ -237,7 +246,6 @@
                             <constraint firstItem="IEP-rM-YzO" firstAttribute="top" secondItem="0Td-3x-wO8" secondAttribute="bottom" constant="444" id="I6Z-fv-XGZ"/>
                             <constraint firstItem="Ged-MT-2xt" firstAttribute="leading" secondItem="xnV-uk-rAM" secondAttribute="trailing" constant="22" id="K9g-yZ-vpg"/>
                             <constraint firstItem="Ged-MT-2xt" firstAttribute="top" secondItem="0Td-3x-wO8" secondAttribute="bottom" constant="444" id="Kcg-0f-AKa"/>
-                            <constraint firstItem="Ged-MT-2xt" firstAttribute="leading" secondItem="ADN-n8-DqZ" secondAttribute="leadingMargin" constant="239" id="LPX-C5-ews"/>
                             <constraint firstItem="xnV-uk-rAM" firstAttribute="top" secondItem="0Td-3x-wO8" secondAttribute="bottom" constant="459" id="ON1-xV-5ik"/>
                             <constraint firstItem="0iv-9C-j4Q" firstAttribute="top" secondItem="0Td-3x-wO8" secondAttribute="bottom" id="TDh-gk-KPn"/>
                             <constraint firstItem="mFE-nw-FRa" firstAttribute="top" secondItem="q6l-sZ-krZ" secondAttribute="bottom" id="aKN-BE-gw3"/>
