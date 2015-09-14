@@ -10,11 +10,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="KdP-ZG-9bj">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="KdP-ZG-9bj">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KdP-ZG-9bj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ime-c7-Z5q"/>
+                <constraint firstAttribute="bottom" secondItem="KdP-ZG-9bj" secondAttribute="bottom" id="Woz-Xu-OyO"/>
+                <constraint firstAttribute="trailing" secondItem="KdP-ZG-9bj" secondAttribute="trailing" id="bPj-sK-hxe"/>
+                <constraint firstItem="KdP-ZG-9bj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c5A-rK-EWg"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
